@@ -19,7 +19,7 @@ public class SubsetSum {
     }
 
     public boolean subsetSumDP(int [] ar, int n, int sum){
-        
+        return false;
     }
 
 }
