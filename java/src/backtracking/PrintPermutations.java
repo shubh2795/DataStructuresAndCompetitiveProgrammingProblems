@@ -9,7 +9,7 @@ import java.util.*;
 public class PrintPermutations {
 
     public static void backTrack(List<String> list, String str, String temp) {
-        if(temp.length()==str.length())
+        if (temp.length() == str.length())
             list.add(temp);
         for (int i = 0; i < str.length(); i++) {
             temp = temp + str.charAt(i);
@@ -21,7 +21,7 @@ public class PrintPermutations {
     public static void main(String[] args) {
         String str = "ABC";
         List<String> permutations = new ArrayList<>();
-        backTrack(permutations, str, 0, "");
+        backTrack(permutations, str, "");
         System.out.println(permutations);
     }
 }
