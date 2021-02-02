@@ -8,9 +8,14 @@ public class Main {
         tree.root.setRight(new Node(3));
         tree.root.getLeft().setLeft(new Node(4));
         tree.root.getLeft().setRight(new Node(5));
-        // tree.postOrderTraversal();
+        System.out.println("Post Order");
+        tree.postOrderTraversal();
+        System.out.println("In Order");
         tree.inOrderTraversal();
-
+        System.out.println("Pre Order");
+        tree.preOrderTraversal();
+        System.out.println("Level Order");
+        tree.levelOrderTraversal();
 
 
     }
